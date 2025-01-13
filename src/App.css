@@ -38,16 +38,21 @@ main {
   padding: 2rem;
 }
 
-/* Game Cards Grid */
+/* Game Cards Flex Container */
 .game-cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 20px;
 }
 
 /* Game Card */
 .game-card {
+  flex: 1 1 calc(20% - 1.5rem); /* Adjusts to 4 cards per row on large screens */
+  max-width: calc(20% - 1.5rem); /* Prevents the card from growing too large */
+  min-width: 250px; /* Ensures cards are never too small */
+  min-height: 250px;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
@@ -63,7 +68,7 @@ main {
 
 .game-card img {
   width: 100%;
-  height: 150px;
+  height: 200px;
   object-fit: cover;
 }
 
