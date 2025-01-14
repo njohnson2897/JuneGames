@@ -5,7 +5,7 @@ function Home() {
   const games = [
     { title: 'Memory', image: sampleImage, link: '/memory' },
     { title: 'Morse Code', image: sampleImage, link: '/morse' },
-    { title: 'Ball Avoidance', image: sampleImage, link: '/ball-avoidance' },
+    { title: 'Ball Avoidance', image: sampleImage, link: '/ballavoidance' },
     { title: 'Breakout', image: sampleImage, link: '/breakout' },
     { title: 'Chatbot', image: sampleImage, link: '/chatbot' },
     { title: 'Ride The Bus', image: sampleImage, link: '/ridethebus' },
