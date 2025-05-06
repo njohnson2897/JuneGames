@@ -1,10 +1,10 @@
 import GameContainer from "../components/GameContainer.jsx";
 import { Link } from 'react-router-dom';
 
-const Blackjack = () => {
+const Pool = () => {
   return (
     <GameContainer>
-      <p>This is where your Blackjack game will go.</p>
+      <p>This is where your Pool game will go.</p>
       <p>
         Add your game elements (like grids, buttons, or instructions) inside the
         GameContainer component.
@@ -14,4 +14,4 @@ const Blackjack = () => {
   );
 };
 
-export default Blackjack;
+export default Pool;

@@ -18,6 +18,8 @@ function Home() {
     { title: 'Dice Roll', image: sampleImage, link: '/diceroll' },
     { title: 'Blackjack', image: sampleImage, link: '/blackjack' },
     { title: 'War', image: sampleImage, link: '/war' },
+    { title: '2048', image: sampleImage, link: '/2048' },
+    { title: 'Pool', image: sampleImage, link: '/pool' },
   ];
 
   return (

@@ -7,7 +7,7 @@ const EightBall = () => {
       <p>This is where your Eight Ball game will go.</p>
       <p>
         Add your game elements (like grids, buttons, or instructions) inside the
-        <code>GameContainer</code> component.
+        GameContainer component.
       </p>
       <Link to="/">Back to Games</Link>
     </GameContainer>

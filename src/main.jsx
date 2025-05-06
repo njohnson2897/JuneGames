@@ -21,6 +21,8 @@ import Tetris from './pages/Tetris.jsx';
 import TouchTyping from './pages/TouchTyping.jsx';
 import Trivia from './pages/Trivia.jsx';
 import War from './pages/War.jsx';
+import TwentyFortyEight from './pages/2048.jsx';
+import Pool from './pages/pool'
 
 const router = createBrowserRouter([
   {
@@ -44,6 +46,8 @@ const router = createBrowserRouter([
       { path: "/touchtyping", element: <TouchTyping /> },
       { path: "/trivia", element: <Trivia /> },
       { path: "/war", element: <War /> },
+      { path: "/2048", element: <TwentyFortyEight /> },
+      { path: "/pool", element: <Pool /> },
     ],
   },
 ]);

@@ -7,7 +7,7 @@ const Canvas = () => {
       <p>This is where your Canvas game will go.</p>
       <p>
         Add your game elements (like grids, buttons, or instructions) inside the
-        <code>GameContainer</code> component.
+        GameContainer component.
       </p>
       <Link to="/">Back to Games</Link>
     </GameContainer>
