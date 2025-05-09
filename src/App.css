@@ -1321,3 +1321,118 @@ main {
   transform: scale(1.05);
 }
 
+/* Touch Typing Game Styles */
+.typing-game {
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.typing-game .game-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #00ff00;
+  border-radius: 8px;
+}
+
+.typing-game .stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.typing-game .stat span:first-child {
+  color: #00ff00;
+  font-size: 0.9em;
+  text-shadow: 2px 2px #000;
+}
+
+.typing-game .stat span:last-child {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-shadow: 2px 2px #000;
+}
+
+.typing-game .word-display {
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 20px;
+  border: 2px solid #00ff00;
+  display: inline-block;
+  margin: 20px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #00ff00;
+  text-shadow: 2px 2px #000;
+  border-radius: 8px;
+  min-width: 200px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+}
+
+.typing-game .typing-input {
+  font-size: 1.5em;
+  padding: 12px;
+  width: 300px;
+  margin-top: 15px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid #00ff00;
+  border-radius: 8px;
+  color: #fff;
+  font-family: 'Press Start 2P', monospace;
+  transition: all 0.3s ease;
+}
+
+.typing-game .typing-input:focus {
+  outline: none;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.4);
+}
+
+.typing-game .typing-input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.typing-game .feedback {
+  font-size: 1.2em;
+  margin-top: 15px;
+  color: #ff0000;
+  text-shadow: 2px 2px #000;
+  min-height: 1.5em;
+}
+
+.typing-game .feedback.correct {
+  color: #00ff00;
+}
+
+.typing-game .button-group {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.typing-game .start-button {
+  padding: 12px 24px;
+  background-color: #2a2a2a;
+  color: #00ff00;
+  border: 2px solid #00ff00;
+  border-radius: 8px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.typing-game .start-button:hover {
+  background-color: #00ff00;
+  color: #000;
+  transform: scale(1.05);
+}
+
