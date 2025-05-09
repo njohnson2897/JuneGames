@@ -601,3 +601,148 @@ main {
   color: #000;
 }
 
+/* Blackjack Game Styles */
+.blackjack-game {
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
+
+.blackjack-game .score-box {
+  margin: 20px auto;
+  font-size: 1.2em;
+  padding: 10px;
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  min-width: 150px;
+  text-align: center;
+  color: #00ff00;
+}
+
+.blackjack-game .cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.blackjack-game .hand-section {
+  width: 100%;
+}
+
+.blackjack-game .cards-title {
+  color: #00ff00;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px #000;
+}
+
+.blackjack-game .cards {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.blackjack-game .card {
+  width: 90px;
+  height: 120px;
+  border-radius: 8px;
+  border: 2px solid #000;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.blackjack-game .card:hover {
+  transform: translateY(-5px);
+}
+
+.blackjack-game .card.hidden {
+  background-color: #808080;
+  color: #808080;
+}
+
+.blackjack-game .hand-value {
+  margin-top: 10px;
+  color: #00ff00;
+  font-size: 1.2em;
+  text-shadow: 2px 2px #000;
+}
+
+.blackjack-game .message-box {
+  margin: 20px auto;
+  font-size: 1.2em;
+  padding: 10px;
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  min-width: 200px;
+  text-align: center;
+  color: #00ff00;
+}
+
+.blackjack-game .button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.blackjack-game .game-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Press Start 2P', monospace;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.blackjack-game .game-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.blackjack-game .hit-button {
+  background-color: #4CAF50;
+}
+
+.blackjack-game .stand-button {
+  background-color: #008CBA;
+}
+
+.blackjack-game .deal-button {
+  background-color: #f44336;
+}
+
+.blackjack-game .game-button:hover:not(:disabled) {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blackjack-game .back-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #2a2a2a;
+  color: #00ff00;
+  text-decoration: none;
+  border: 2px solid #00ff00;
+  font-family: 'Press Start 2P', monospace;
+  transition: all 0.3s ease;
+}
+
+.blackjack-game .back-button:hover {
+  background-color: #00ff00;
+  color: #000;
+}
+
