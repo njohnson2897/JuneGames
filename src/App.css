@@ -458,3 +458,42 @@ main {
   background-color: #ab9d90;
 }
 
+/* Aim Training Game Styles */
+.gun-game {
+  text-align: center;
+}
+
+.game-area {
+  width: 800px;
+  height: 600px;
+  margin: 20px auto;
+  border: 1px solid black;
+  position: relative; /* To position circles inside */
+  cursor: crosshair; /* Change cursor to crosshair */
+}
+
+.circle {
+  position: absolute;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.weapon-select button {
+  margin: 0 5px;
+}
+
+.game-over {
+  font-size: 2rem;
+  color: #ff0000;
+}
+
