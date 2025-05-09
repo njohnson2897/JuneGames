@@ -28,12 +28,6 @@ function Home() {
       category: "Classic",
     },
     {
-      title: "Chatbot",
-      image: sampleImage,
-      link: "/chatbot",
-      category: "Interactive",
-    },
-    {
       title: "Ride The Bus",
       image: sampleImage,
       link: "/ridethebus",

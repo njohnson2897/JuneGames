@@ -11,7 +11,6 @@ import BallAvoidance from './pages/BallAvoidance.jsx';
 import Blackjack from './pages/Blackjack.jsx';
 import Breakout from './pages/Breakout.jsx';
 import Canvas from './pages/Canvas.jsx';
-import Chatbot from './pages/Chatbot.jsx';
 import DiceRoll from './pages/DiceRoll.jsx';
 import EightBall from './pages/EightBall.jsx';
 import Memory from './pages/Memory.jsx';
@@ -22,7 +21,7 @@ import TouchTyping from './pages/TouchTyping.jsx';
 import Trivia from './pages/Trivia.jsx';
 import War from './pages/War.jsx';
 import TwentyFortyEight from './pages/2048.jsx';
-import Pool from './pages/pool'
+import Pool from './pages/Pool.jsx'
 
 const router = createBrowserRouter([
   {
@@ -36,7 +35,6 @@ const router = createBrowserRouter([
       { path: "/blackjack", element: <Blackjack /> },
       { path: "/breakout", element: <Breakout /> },
       { path: "/canvas", element: <Canvas /> },
-      { path: "/chatbot", element: <Chatbot /> },
       { path: "/diceroll", element: <DiceRoll /> },
       { path: "/eightball", element: <EightBall /> },
       { path: "/memory", element: <Memory /> },
