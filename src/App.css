@@ -786,3 +786,109 @@ main {
   text-align: left;
 }
 
+/* Memory Game Styles */
+.memory-game {
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
+
+.memory-game .game-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #00ff00;
+  text-shadow: 2px 2px #000;
+}
+
+.memory-game .game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+}
+
+.memory-game .memory-card {
+  aspect-ratio: 1;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid #00ff00;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+}
+
+.memory-game .memory-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.4);
+}
+
+.memory-game .memory-card.revealed {
+  transform: rotateY(180deg);
+}
+
+.memory-game .memory-card.matched {
+  border-color: #00ff00;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
+  animation: pulse 1s infinite;
+}
+
+.memory-game .game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9);
+  padding: 30px;
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  color: #00ff00;
+  text-shadow: 2px 2px #000;
+  z-index: 100;
+}
+
+.memory-game .game-over h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.memory-game .game-over p {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.memory-game .restart-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00ff00;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Press Start 2P', monospace;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.memory-game .restart-button:hover {
+  background-color: #00cc00;
+  transform: scale(1.05);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+  }
+}
+
