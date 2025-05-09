@@ -746,3 +746,43 @@ main {
   color: #000;
 }
 
+/* Breakout Game Styles */
+.breakout-game {
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
+
+.breakout-game canvas {
+  border: 2px solid #00ff00;
+  border-radius: 8px;
+  background-color: #000;
+  box-shadow: 0 0 10px #00ff00;
+}
+
+.breakout-game .letter-container {
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #00ff00;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.8);
+  max-width: 600px;
+  color: #00ff00;
+  text-shadow: 2px 2px #000;
+}
+
+.breakout-game .letter-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #00ff00;
+  text-shadow: 2px 2px #000;
+}
+
+.breakout-game .letter-content {
+  white-space: pre-wrap;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.9em;
+  line-height: 1.5;
+  text-align: left;
+}
+
