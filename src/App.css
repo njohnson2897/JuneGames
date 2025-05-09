@@ -892,3 +892,172 @@ main {
   }
 }
 
+/* Morse Code Styles */
+.morse-game {
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.morse-game .morse-controls {
+  margin-bottom: 30px;
+}
+
+.morse-game .input-group,
+.morse-game .output-group {
+  margin-bottom: 20px;
+}
+
+.morse-game label {
+  display: block;
+  margin-bottom: 10px;
+  color: #00ff00;
+  font-size: 1.2em;
+  text-shadow: 2px 2px #000;
+}
+
+.morse-game textarea {
+  width: 100%;
+  padding: 15px;
+  background-color: #1a1a1a;
+  border: 2px solid #00ff00;
+  border-radius: 8px;
+  color: #00ff00;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1em;
+  resize: vertical;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+}
+
+.morse-game textarea:focus {
+  outline: none;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.4);
+}
+
+.morse-game .button-group {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.morse-game button {
+  padding: 12px 24px;
+  background-color: #2a2a2a;
+  color: #00ff00;
+  border: 2px solid #00ff00;
+  border-radius: 8px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.morse-game button:hover:not(:disabled) {
+  background-color: #00ff00;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.morse-game button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.morse-game button.playing {
+  animation: pulse 1s infinite;
+}
+
+.morse-game .speed-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.morse-game .speed-control input[type="range"] {
+  width: 200px;
+  height: 5px;
+  -webkit-appearance: none;
+  background: #2a2a2a;
+  border: 2px solid #00ff00;
+  border-radius: 5px;
+  outline: none;
+}
+
+.morse-game .speed-control input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #00ff00;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.morse-game .speed-control input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.6);
+}
+
+.morse-game .speed-control span {
+  color: #00ff00;
+  font-family: 'Press Start 2P', monospace;
+  min-width: 50px;
+}
+
+.morse-game .morse-guide {
+  margin-top: 40px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+}
+
+.morse-game .morse-guide h3 {
+  color: #00ff00;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #000;
+}
+
+.morse-game .guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 15px;
+  text-align: left;
+}
+
+.morse-game .guide-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: rgba(0, 255, 0, 0.1);
+  border: 1px solid #00ff00;
+  border-radius: 5px;
+}
+
+.morse-game .guide-item .char {
+  color: #00ff00;
+  font-weight: bold;
+}
+
+.morse-game .guide-item .code {
+  color: #fff;
+  font-family: monospace;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+  }
+}
+
