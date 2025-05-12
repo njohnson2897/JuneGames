@@ -15,6 +15,7 @@ import Dino from "./pages/Dino.jsx";
 import EightBall from "./pages/EightBall.jsx";
 import Memory from "./pages/Memory.jsx";
 import Morse from "./pages/Morse.jsx";
+import Pong from "./pages/Pong.jsx";
 import RideTheBus from "./pages/RideTheBus.jsx";
 import Tetris from "./pages/Tetris.jsx";
 import TouchTyping from "./pages/TouchTyping.jsx";
@@ -40,6 +41,7 @@ const router = createBrowserRouter([
       { path: "/eightball", element: <EightBall /> },
       { path: "/memory", element: <Memory /> },
       { path: "/morse", element: <Morse /> },
+      { path: "/pong", element: <Pong /> },
       { path: "/ridethebus", element: <RideTheBus /> },
       { path: "/tetris", element: <Tetris /> },
       { path: "/touchtyping", element: <TouchTyping /> },
