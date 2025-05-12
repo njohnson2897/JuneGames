@@ -1,27 +1,27 @@
-import ReactDOM from 'react-dom/client';
+import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-
-import App from './App.jsx';
-import Home from './pages/Home.jsx';
-import ErrorPage from './pages/ErrorPage.jsx';
-import './index.css'
-import AimTraining from './pages/AimTraining.jsx';
-import BallAvoidance from './pages/BallAvoidance.jsx';
-import Blackjack from './pages/Blackjack.jsx';
-import Breakout from './pages/Breakout.jsx';
-import Canvas from './pages/Canvas.jsx';
-import DiceRoll from './pages/DiceRoll.jsx';
-import EightBall from './pages/EightBall.jsx';
-import Memory from './pages/Memory.jsx';
-import Morse from './pages/Morse.jsx';
-import RideTheBus from './pages/RideTheBus.jsx';
-import Tetris from './pages/Tetris.jsx';
-import TouchTyping from './pages/TouchTyping.jsx';
-import Trivia from './pages/Trivia.jsx';
-import War from './pages/War.jsx';
-import TwentyFortyEight from './pages/2048.jsx';
-import Pool from './pages/Pool.jsx'
+import App from "./App.jsx";
+import Home from "./pages/Home.jsx";
+import ErrorPage from "./pages/ErrorPage.jsx";
+import "./index.css";
+import AimTraining from "./pages/AimTraining.jsx";
+import BallAvoidance from "./pages/BallAvoidance.jsx";
+import Blackjack from "./pages/Blackjack.jsx";
+import Breakout from "./pages/Breakout.jsx";
+import Canvas from "./pages/Canvas.jsx";
+import DiceRoll from "./pages/DiceRoll.jsx";
+import Dino from "./pages/Dino.jsx";
+import EightBall from "./pages/EightBall.jsx";
+import Memory from "./pages/Memory.jsx";
+import Morse from "./pages/Morse.jsx";
+import RideTheBus from "./pages/RideTheBus.jsx";
+import Tetris from "./pages/Tetris.jsx";
+import TouchTyping from "./pages/TouchTyping.jsx";
+import Trivia from "./pages/Trivia.jsx";
+import War from "./pages/War.jsx";
+import TwentyFortyEight from "./pages/2048.jsx";
+import Pool from "./pages/Pool.jsx";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +36,7 @@ const router = createBrowserRouter([
       { path: "/breakout", element: <Breakout /> },
       { path: "/canvas", element: <Canvas /> },
       { path: "/diceroll", element: <DiceRoll /> },
+      { path: "/dino", element: <Dino /> },
       { path: "/eightball", element: <EightBall /> },
       { path: "/memory", element: <Memory /> },
       { path: "/morse", element: <Morse /> },

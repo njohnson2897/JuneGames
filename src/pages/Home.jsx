@@ -79,6 +79,7 @@ function Home() {
     { title: "War", image: sampleImage, link: "/war", category: "Card" },
     { title: "2048", image: sampleImage, link: "/2048", category: "Puzzle" },
     { title: "Pool", image: sampleImage, link: "/pool", category: "Sports" },
+    { title: "Dino", image: sampleImage, link: "/dino", category: "Arcade" },
   ];
 
   return (

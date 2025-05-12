@@ -1436,3 +1436,63 @@ main {
   transform: scale(1.05);
 }
 
+/* Dino Game Styles */
+.dino-game {
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.dino-game .game-canvas {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #00ff00;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+}
+
+.dino-game .game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #00ff00;
+  color: #fff;
+  text-align: center;
+}
+
+.dino-game .game-over h2 {
+  color: #00ff00;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px #000;
+}
+
+.dino-game .game-over p {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+.dino-game .restart-button {
+  padding: 12px 24px;
+  background-color: #2a2a2a;
+  color: #00ff00;
+  border: 2px solid #00ff00;
+  border-radius: 8px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dino-game .restart-button:hover {
+  background-color: #00ff00;
+  color: #000;
+  transform: scale(1.05);
+}
+
