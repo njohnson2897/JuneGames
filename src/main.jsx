@@ -24,6 +24,7 @@ import Trivia from "./pages/Trivia.jsx";
 import War from "./pages/War.jsx";
 import TwentyFortyEight from "./pages/2048.jsx";
 import Pool from "./pages/Pool.jsx";
+import SkyBird from "./pages/SkyBird.jsx";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,7 @@ const router = createBrowserRouter([
       { path: "/war", element: <War /> },
       { path: "/2048", element: <TwentyFortyEight /> },
       { path: "/pool", element: <Pool /> },
+      { path: "/skybird", element: <SkyBird /> },
     ],
   },
 ]);

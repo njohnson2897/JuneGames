@@ -1496,3 +1496,83 @@ main {
   transform: scale(1.05);
 }
 
+/* Sky Bird Game Styles */
+.sky-bird-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.sky-bird-game .background {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  background-color: #87CEEB;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.sky-bird-game .bird {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #FFD700;
+  border-radius: 50%;
+  top: 40vh;
+  left: 10vw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.1s;
+}
+
+.sky-bird-game .bird:hover {
+  transform: scale(1.05);
+}
+
+.sky-bird-game .pipe_sprite {
+  position: absolute;
+  width: 50px;
+  height: 30vh;
+  background-color: #2E8B57;
+  border: 2px solid #1B4D3E;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.sky-bird-game .score-display {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.sky-bird-game .message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.sky-bird-game .controls-info {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.sky-bird-game .controls-info p {
+  margin: 5px 0;
+  color: #333;
+}
+
