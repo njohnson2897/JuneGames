@@ -17,6 +17,7 @@ import Memory from "./pages/Memory.jsx";
 import Morse from "./pages/Morse.jsx";
 import Pong from "./pages/Pong.jsx";
 import RideTheBus from "./pages/RideTheBus.jsx";
+import Snake from "./pages/Snake.jsx";
 import Tetris from "./pages/Tetris.jsx";
 import TouchTyping from "./pages/TouchTyping.jsx";
 import Trivia from "./pages/Trivia.jsx";
@@ -43,6 +44,7 @@ const router = createBrowserRouter([
       { path: "/morse", element: <Morse /> },
       { path: "/pong", element: <Pong /> },
       { path: "/ridethebus", element: <RideTheBus /> },
+      { path: "/snake", element: <Snake /> },
       { path: "/tetris", element: <Tetris /> },
       { path: "/touchtyping", element: <TouchTyping /> },
       { path: "/trivia", element: <Trivia /> },
